@@ -14,7 +14,8 @@ module SubR
 
 		class << self
 			def parse filename
-				Episode.new 1, 1, 'Test'
+				args = filename.scan(/^S(\d+)E(\d+) - (.+)\.\w+$/)
+				Episode.new *args[0]
 			end
 
 			def get_episodes path
