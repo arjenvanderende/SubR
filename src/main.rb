@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 require 'bierdopje'
-require 'bierdopje/show'
 
 # Enumerate the video files in a directory
 def get_video_files path
