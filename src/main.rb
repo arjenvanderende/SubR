@@ -11,10 +11,7 @@ end
 
 # Execute the script
 puts 'SubR - Bulk Subtitle Downloader for TV-series'
-
-@api_key = ARGV[0]
-puts "API key: #{@api_key}"
-Bierdopje::Base.api_key = @api_key
+Bierdopje::Base.api_key = "BB442E7744E9B541"
 
 @video_files = SubR::Episode.get_episodes('/Volumes/Multimedia/Video/TV-series/Flashpoint/season 4')
 puts @video_files
