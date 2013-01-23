@@ -13,11 +13,13 @@ end
 puts 'SubR - Bulk Subtitle Downloader for TV-series'
 Bierdopje::Base.api_key = "BB442E7744E9B541"
 
-@video_files = SubR::Episode.get_episodes('/Volumes/Multimedia/Video/TV-series/Flashpoint/season 4')
-puts @video_files
-
 #@show_id = SubR::find_showid 82438
 show_id = 3210
-puts @show_id
 
+@episodes = SubR::Episode.get_episodes('/Volumes/Multimedia/Video/TV-series/Flashpoint/season 4')
+@episodes.each { |episode|  
+	subtitles = episode.find_subtitles show_id
+	str = subtitles.map { |s| s.link }.join ","
+	puts "Subtitles for S#{episode.season}E#{episode.episode}: #{str}"
+}
 
