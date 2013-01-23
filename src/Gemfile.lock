@@ -1,0 +1,15 @@
+GEM
+  specs:
+    bierdopje (0.0.1)
+      nokogiri (~> 1.4.4)
+      rest-client (~> 1.6.1)
+    mime-types (1.19)
+    nokogiri (1.4.7)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bierdopje
