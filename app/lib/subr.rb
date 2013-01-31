@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'bierdopje'
-require './episode.rb'
+require './subr/episode.rb'
 
 # Enumerate the video files in a directory
 def find_showid tvdb_id
