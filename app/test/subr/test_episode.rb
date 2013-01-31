@@ -1,7 +1,7 @@
 require 'test/unit'
 require 'subr/episode'
 
-class EpisodeTest < Test::Unit::TestCase
+class TestEpisode < Test::Unit::TestCase
 	def test_parse_finds_episode_title
 		episode = SubR::Episode.parse 'S00E00 - Episode name.mkv'
 		assert_equal 'Episode name', episode.title
