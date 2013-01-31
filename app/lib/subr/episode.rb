@@ -1,3 +1,4 @@
+require 'bierdopje'
 require 'bierdopje/Subtitle'
 
 module SubR
